@@ -77,6 +77,7 @@ function animation() {
       pin: true,
     },
   });
+
   tlImages
     .to(".promo__bottom", {
       opacity: 1,
@@ -90,4 +91,37 @@ function animation() {
       },
       "<"
     );
+
+  const tlLines = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".choose__wrap",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+    },
+  });
+
+  tlLines
+    .to(".choose__wrap .top", {
+      xPercent: -60,
+    })
+    .to(
+      ".choose__wrap .bottom",
+      {
+        xPercent: 20,
+      },
+      "<"
+    );
+
+  gsap.from(".rates-card", {
+    stagger: 0.3,
+    opacity: 0,
+    yPercent: 100,
+    scrollTrigger: {
+      trigger: ".rates",
+      start: "top 10%",
+      toggleActions: "play none none reverse",
+      markers: true,
+    },
+  });
 }
