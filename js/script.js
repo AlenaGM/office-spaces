@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -121,7 +122,70 @@ function animation() {
       trigger: ".rates",
       start: "top 10%",
       toggleActions: "play none none reverse",
-      markers: true,
     },
   });
+
+  let sections = gsap.utils.toArray(".plus__block");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    delay: 0.5,
+    scrollTrigger: {
+      trigger: ".plus",
+      start: "top top",
+      end: `+=${sections.length * 1000}`,
+      pin: true,
+      scrub: true,
+      snap: 1 / (sections.length - 1),
+    },
+  });
+
+  const tlPoint = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".point",
+      start: "top center",
+      toggleActions: "play reverse play reverse",
+      end: "bottom bottom",
+    },
+  });
+
+  tlPoint
+    .to(".point", {
+      backgroundColor: "#000",
+    })
+    .to(
+      ".point__title",
+      {
+        color: "#fff",
+      },
+      "<"
+    )
+    .to(
+      ".point__descr",
+      {
+        color: "#fff",
+      },
+      "<"
+    );
+
+  const tlImg = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".point__wrapper",
+      start: "top top",
+      pin: true,
+      scrub: 1,
+    },
+  });
+
+  tlImg
+    .to(".point__img:first-child img", {
+      scale: 1,
+    })
+    .to(
+      ".point__img:last-child img",
+      {
+        scale: 0,
+      },
+      "<"
+    );
 }

@@ -714,13 +714,21 @@ img {
   }
 }
 
-.plus__block {
-  display: flex;
-  align-items: center;
+.plus {
+  height: 100vh;
 }
 
-.plus__block:first-child {
-  margin-bottom: 100px;
+.plus__wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.plus__block {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
 }
 
 .plus-block:last-child .plus-block__title span.bright {
@@ -825,12 +833,20 @@ img {
 .point__wrapper {
   position: relative;
   width: 100%;
+  height: 100vh;
+}
+
+.point__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .point__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(0.5);
 }
 
 .point__title span {
