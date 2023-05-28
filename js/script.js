@@ -188,4 +188,36 @@ function animation() {
       },
       "<"
     );
+
+  gsap.to(".footer__point", {
+    y: 0,
+    scrollTrigger: {
+      trigger: ".main",
+      start: "top top",
+      end: "bottom 70%",
+      scrub: true,
+    },
+  });
+
+  const tlFooter = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "top 70%",
+      end: "bottom bottom",
+      scrub: 1,
+    },
+  });
+
+  tlFooter
+    .to(".footer__point", {
+      scale: 1,
+    })
+    .to(
+      ".footer__point svg path",
+      {
+        fill: "#ff0027",
+        opacity: 1,
+      },
+      "<"
+    );
 }
