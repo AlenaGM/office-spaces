@@ -810,6 +810,7 @@ img {
     transform: translateX(105px);
   }
 }
+
 @media (max-width: 576px) {
   .plus-block:last-child .plus-block__title span:last-child {
     transform: translateX(70px);

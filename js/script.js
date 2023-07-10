@@ -49,7 +49,7 @@ function findHeight() {
 }
 
 function animation() {
-  //gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
   const tlPromo = gsap.timeline({});
 
@@ -220,4 +220,19 @@ function animation() {
       },
       "<"
     );
+
+  //let end='';
+  //let start='';
+  //ScrollTrigger.matchMedia({
+  //  '(min-width:768px)': function(){
+  //    start = 'top center';
+  //    end = 'bottom 20%';
+  //    createScrollTriggers();
+  //  },
+  //  '(max-width: 767px)': function() {
+  //    start = 'top 95%';
+  //    end = 'bottom center';
+  //    createScrollTriggers();
+  //  }
+  //})
 }
