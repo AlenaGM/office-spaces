@@ -87,7 +87,7 @@ img {
 .big-title span:first-child {
   display: inline-block;
   max-width: calc(100% - 560px);
-  transform: translateX(200%);
+  transform: translateX(200%); /*new*/
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ img {
   display: block;
   margin-left: 165px;
   max-width: calc(100% - 165px);
-  transform: translateX(-200%);
+  transform: translateX(-200%); /*new*/
   line-height: 96%;
   text-overflow: initial;
 }
@@ -368,7 +368,7 @@ img {
 .promo {
   position: relative;
   padding-top: 142px;
-  overflow: hidden;
+  overflow: hidden; /*new*/
 }
 
 .promo__top {
@@ -389,12 +389,12 @@ img {
 
 .promo__bottom {
   position: relative;
-  transform: translateY(100%);
+  transform: translateY(100%); /*new*/
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
   max-height: 380px;
-  opacity: 0;
+  opacity: 0; /*new*/
   z-index: 1;
 }
 
@@ -715,20 +715,24 @@ img {
 }
 
 .plus {
-  height: 100vh;
+  height: 100vh; /*new*/
 }
 
 .plus__wrapper {
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  overflow: hidden;
+  width: 100vw; /*new*/
+  height: 100%; /*new*/
+  display: flex; /*new*/
+  overflow: hidden; /*new*/
 }
 
 .plus__block {
   display: flex;
-  flex: 0 0 100%;
+  flex: 0 0 100%; /*new*/
   align-items: center;
+}
+
+.plus__block:first-child {
+  margin-bottom: 100px; /*new*/
 }
 
 .plus-block:last-child .plus-block__title span.bright {
@@ -789,6 +793,14 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .plus {
+    height: auto; /*new*/
+  }
+
+  .plus__wrapper {
+    flex-direction: column; /*new*/
+  }
+
   .plus-block__text {
     height: auto;
   }
@@ -834,20 +846,20 @@ img {
 .point__wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /*new*/
 }
 
 .point__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: absolute; /*new*/
+  width: 100%; /*new*/
+  height: 100%; /*new*/
 }
 
 .point__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(0.5);
+  transform: scale(0.5); /*new*/
 }
 
 .point__title span {
@@ -962,7 +974,7 @@ img {
   position: fixed;
   right: calc((100vw - 1200px + 145px) / 2);
   bottom: 232px;
-  transform: translateX(50%) scale(0.6) translate(-528px);
+  transform: translateX(50%) scale(0.6) translateY(-528px); /*new*/
   max-width: 385px;
   z-index: -1;
 }
@@ -973,9 +985,8 @@ img {
 }
 
 .footer__point svg path {
-  /*fill: #ff0027;*/
-  fill: #9aa2a5;
-  opacity: 0.1;
+  fill: #9aa2a5; /*ok*/
+  opacity: 0.1; /*ok*/
 }
 
 .footer__contacts {
