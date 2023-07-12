@@ -146,9 +146,23 @@ function animation() {
     });
 
     tlPoint
-      .to(".point", {
+      .to("body", {
         backgroundColor: "#000",
       })
+      .to(
+        ".plus-block__text",
+        {
+          color: "#fff",
+        },
+        "<"
+      )
+      .to(
+        ".plus-block__text span:last-child",
+        {
+          color: "#fff",
+        },
+        "<"
+      )
       .to(
         ".point__title",
         {
@@ -219,6 +233,16 @@ function animation() {
   });
 
   mediaAnimation.add("(max-width: 1024px)", () => {
+    gsap.to(".progressbar", {
+      width: "100%",
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+      },
+    });
+
     const tlPromo = gsap.timeline({});
 
     tlPromo
@@ -294,9 +318,23 @@ function animation() {
     });
 
     tlPoint
-      .to(".point", {
+      .to("body", {
         backgroundColor: "#000",
       })
+      .to(
+        ".plus-block__text",
+        {
+          color: "#fff",
+        },
+        "<"
+      )
+      .to(
+        ".plus-block__text span:last-child",
+        {
+          color: "#fff",
+        },
+        "<"
+      )
       .to(
         ".point__title",
         {
@@ -365,19 +403,4 @@ function animation() {
         "<"
       );
   });
-
-  //let end='';
-  //let start='';
-  //ScrollTrigger.matchMedia({
-  //  '(min-width:768px)': function(){
-  //    start = 'top center';
-  //    end = 'bottom 20%';
-  //    createScrollTriggers();
-  //  },
-  //  '(max-width: 767px)': function() {
-  //    start = 'top 95%';
-  //    end = 'bottom center';
-  //    createScrollTriggers();
-  //  }
-  //})
 }
