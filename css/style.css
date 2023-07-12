@@ -87,7 +87,7 @@ img {
 .big-title span:first-child {
   display: inline-block;
   max-width: calc(100% - 560px);
-  transform: translateX(200%); /*new*/
+  transform: translateX(200%);
   overflow: hidden;
 }
 
@@ -95,7 +95,7 @@ img {
   display: block;
   margin-left: 165px;
   max-width: calc(100% - 165px);
-  transform: translateX(-200%); /*new*/
+  transform: translateX(-200%);
   line-height: 96%;
   text-overflow: initial;
 }
@@ -368,7 +368,7 @@ img {
 .promo {
   position: relative;
   padding-top: 142px;
-  overflow: hidden; /*new*/
+  overflow: hidden;
 }
 
 .promo__top {
@@ -389,12 +389,12 @@ img {
 
 .promo__bottom {
   position: relative;
-  transform: translateY(100%); /*new*/
+  transform: translateY(100%);
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
   max-height: 380px;
-  opacity: 0; /*new*/
+  opacity: 0;
   z-index: 1;
 }
 
@@ -715,24 +715,24 @@ img {
 }
 
 .plus {
-  height: 100vh; /*new*/
+  height: 100vh;
 }
 
 .plus__wrapper {
-  width: 100vw; /*new*/
-  height: 100%; /*new*/
-  display: flex; /*new*/
-  overflow: hidden; /*new*/
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
 .plus__block {
   display: flex;
-  flex: 0 0 100%; /*new*/
+  flex: 0 0 100%;
   align-items: center;
 }
 
 .plus__block:first-child {
-  margin-bottom: 100px; /*new*/
+  margin-bottom: 100px;
 }
 
 .plus-block:last-child .plus-block__title span.bright {
@@ -794,11 +794,11 @@ img {
 
 @media (max-width: 1024px) {
   .plus {
-    height: auto; /*new*/
+    height: auto;
   }
 
   .plus__wrapper {
-    flex-direction: column; /*new*/
+    flex-direction: column;
   }
 
   .plus-block__text {
@@ -846,20 +846,20 @@ img {
 .point__wrapper {
   position: relative;
   width: 100%;
-  height: 100vh; /*new*/
+  height: 100vh;
 }
 
 .point__img {
-  position: absolute; /*new*/
-  width: 100%; /*new*/
-  height: 100%; /*new*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .point__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(0.5); /*new*/
+  transform: scale(0.5);
 }
 
 .point__title span {
@@ -974,7 +974,7 @@ img {
   position: fixed;
   right: calc((100vw - 1200px + 145px) / 2);
   bottom: 232px;
-  transform: translateX(50%) scale(0.6) translateY(-528px); /*new*/
+  transform: translateX(50%) scale(0.6) translateY(-528px);
   max-width: 385px;
   z-index: -1;
 }
@@ -985,8 +985,8 @@ img {
 }
 
 .footer__point svg path {
-  fill: #9aa2a5; /*ok*/
-  opacity: 0.1; /*ok*/
+  fill: #9aa2a5;
+  opacity: 0.1;
 }
 
 .footer__contacts {
