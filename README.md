@@ -16,7 +16,8 @@ _Landing page for coworking spaces_ <br>
 <br><br>
 <img width="30%" alt="screen capture" src="../main/src/assets/images/capture-one.jpeg">
 <img width="30%" alt="screen capture" src="../main/src/assets/images/capture-two.jpeg">
-<img width="30%" alt="screen capture" src="../main/src/assets/images/capture-three.jpeg">
+<img width="30%" alt="screen capture" src="../main/img/pointofficesspaces.mp4">
+![](docs/docfx/images/NormalBlend.gif)
 <br><br>
 
 [Point Office Spaces]: point-office-spaces.netlify.app/
