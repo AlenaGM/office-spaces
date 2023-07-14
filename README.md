@@ -13,6 +13,10 @@ _Landing page for coworking spaces_ <br>
 
 ## Result
 
+
+https://github.com/AlenaGM/office-spaces/assets/91268509/3641d026-8252-408e-a3b4-232164682a35
+
+
 <br><br>
 
 <img alt="screen capture" src="../main/img/pointofficespaces.mp4">
