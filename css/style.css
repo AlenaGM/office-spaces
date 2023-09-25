@@ -337,6 +337,11 @@ img {
   flex: 0 0 96px;
 }
 
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
 .header__tel {
   font-family: "Gilroy-Medium";
   font-size: 26px;
@@ -629,7 +634,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 60px 52px;
-  background-color: #897d71;
+  background-color: #80746b;
   color: #fff;
 }
 
@@ -1040,7 +1045,7 @@ img {
 
 .footer__design a {
   font-size: 14px;
-  color: #aeaeae;
+  color: #000;
   line-height: 140%;
   text-decoration: none;
 }
