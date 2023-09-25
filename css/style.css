@@ -984,7 +984,7 @@ img {
   position: fixed;
   right: calc((100vw - 1200px + 145px) / 2);
   bottom: 232px;
-  transform: translateX(50%) scale(0.6) translateY(-678px);
+  transform: translateX(50%) scale(0.6) translateY(-100vh);
   max-width: 385px;
   z-index: -1;
 }
