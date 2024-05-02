@@ -1,6 +1,6 @@
 # Point Office Spaces 👩‍💻🏢
 
-_Coworking spaces landing page_ <br>
+_Modern coworking spaces landing page with stunning GSAP animations_ <br>
 
 ## Tech stack
 
